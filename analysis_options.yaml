@@ -1,0 +1,23 @@
+# analysis_options.yaml
+
+# Konfigurasi untuk Dart Analyzer
+analyzer:
+  # Aturan untuk error yang dihasilkan
+  errors:
+    # Contoh aturan: menetapkan error untuk method yang tidak mengembalikan nilai
+    missing_return: error
+    # Aturan untuk variabel lokal yang tidak digunakan diabaikan
+    unused_local_variable: ignore
+    # Preferensi penggunaan tanda kutip tunggal tidak diterapkan
+    prefer_single_quotes: false
+  
+  # Aturan untuk hint (peringatan)
+    # Contoh aturan: menghindari literal boolean dalam ekspresi kondisional
+    avoid_bool_literals_in_conditional_expressions: true
+    # Aturan untuk preferensi penggunaan konstruktor konstan
+    prefer_const_constructors: true
+    # Contoh aturan: mengabaikan penggunaan cast yang tidak perlu
+    unnecessary_cast: false
+
+# Konfigurasi tambahan, seperti penanganan null-aware operators
+# dan aturan khusus lainnya dapat ditambahkan sesuai kebutuhan
